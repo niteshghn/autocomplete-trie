@@ -15,3 +15,11 @@ with open(FILE) as f:
     readCSV = csv.reader(f, delimiter='\n')
     for row in readCSV:
         trie.insert(row[0].lower())
+
+
+if __name__ == '__main__': # for testing purpose
+    res = Connector.search('james')
+    if res:
+       print("Result PASS")
+    else:
+        print("Test fail")
