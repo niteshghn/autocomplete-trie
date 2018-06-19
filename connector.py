@@ -14,4 +14,4 @@ trie = Trie()
 with open(FILE) as f:
     readCSV = csv.reader(f, delimiter='\n')
     for row in readCSV:
-        trie.insert(row[0])
+        trie.insert(row[0].lower())

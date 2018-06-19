@@ -33,7 +33,7 @@ class Trie:
         yield from cur.all_words(prefix)
 
     '''
-    word : word to be inserted in triea
+    word : word to be inserted in trie
     '''
     def insert(self, word):
         node = self
